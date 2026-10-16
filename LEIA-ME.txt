@@ -1,0 +1,21 @@
+PRESENTE DE ANIVERSÁRIO — GUIA RÁPIDO
+
+1. Extraia a pasta Mon Amour.
+2. Abra index.html no navegador. Para editar o código, use o Visual Studio Code.
+3. Personalize:
+   - index.html: altere textos, carta, apelidos e as três URLs das fotos.
+   - script.js: altere DATA_INICIO_NAMORO.
+   - Música: crie a pasta musica, adicione musica.mp3 e descomente a linha <source> no index.html.
+4. Para trocar as fotos por imagens locais:
+   - Crie uma pasta fotos.
+   - Coloque suas imagens nela (por exemplo, foto1.jpg, foto2.jpg, foto3.jpg).
+   - Troque o src de cada img em index.html para fotos/foto1.jpg, etc.
+5. A música só começa depois do clique, por regras dos navegadores.
+6. As fotos de exemplo usam imagens externas e precisam de internet; substitua pelas fotos de vocês para personalizar de verdade.
+
+Arquivos:
+- index.html: conteúdo e estrutura.
+- style.css: cores, layout, animações e responsividade.
+- script.js: contador, música, carta, velas, confetes e surpresa.
+
+Dica: antes de enviar para ela, abra o site no celular e confira tudo.
