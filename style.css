@@ -4,8 +4,8 @@
   --bg: #211017;
   --bg-soft: #2b151f;
   --wine: #6f263e;
-  --rose: #d98d9f;
-  --rose-light: #f0c9d0;
+  --rose: #d67d92;
+  --rose-light: #f5abb8;
   --cream: #fff2e8;
   --muted: #c7aab1;
   --line: rgba(240, 201, 208, 0.19);
@@ -335,13 +335,22 @@ h2 {
 .photo-tall img {
   height: 370px;
 }
+.photo-tall:hover{
+  transform: translateY(-10px);
+}
 .photo-offset {
   margin-top: 60px;
   transform: rotate(2deg);
 }
+.photo-offset:hover{
+  transform: translateY(-10px);
+}
 .photo-small {
   margin-top: 18px;
   transform: rotate(-1deg);
+}
+.photo-small:hover{
+  transform: translateY(-10px);
 }
 .photo-card figcaption {
   font-family: var(--serif);
@@ -415,6 +424,10 @@ blockquote {
   height: 190px;
   position: relative;
   filter: drop-shadow(0 22px 35px rgba(0, 0, 0, 0.25));
+  transform: rotate(2deg);
+}
+.envelope:hover{
+  transform: translateY(-10px);
 }
 .envelope-back {
   position: absolute;
