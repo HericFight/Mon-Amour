@@ -1,7 +1,7 @@
 // =================== PERSONALIZE AQUI ===================
 // Troque pela data em que vocês começaram a namorar.
 // Formato: ano, mês (0 = janeiro, 1 = fevereiro...), dia, hora, minuto.
-const DATA_INICIO_NAMORO = new Date(2024, 5, 3, 14, 10);
+const DATA_INICIO_NAMORO = new Date(2024, 4, 3, 14, 10);
 
 // Para adicionar música:
 // 1. Crie a pasta "musica" dentro do projeto.
