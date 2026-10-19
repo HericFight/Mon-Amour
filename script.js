@@ -1,7 +1,7 @@
 // =================== PERSONALIZE AQUI ===================
 // Troque pela data em que vocês começaram a namorar.
 // Formato: ano, mês (0 = janeiro, 1 = fevereiro...), dia, hora, minuto.
-const DATA_INICIO_NAMORO = new Date(2024, 3, 5, 14, 10);
+const DATA_INICIO_NAMORO = new Date(2024, 5, 3, 14, 10);
 
 // Para adicionar música:
 // 1. Crie a pasta "musica" dentro do projeto.
@@ -27,20 +27,20 @@ function showToast(message) {
 musicToggle.addEventListener("click", async () => {
   if (backgroundMusic.paused) {
     if (!backgroundMusic.querySelector("source")) {
-      showToast("Adicione sua música em musica/musica.mp3 e ative a linha no index.html 🎵");
+      showToast("Agrega tu canción en musica/musica.mp3 y activa la línea en index.html 🎵");
       return;
     }
     try {
       await backgroundMusic.play();
       musicToggle.setAttribute("aria-pressed", "true");
-      musicLabel.textContent = "Pausar música";
+      musicLabel.textContent = "Pausar la música";
     } catch {
-      showToast("Não consegui tocar a música. Confira o arquivo musica/musica.mp3.");
+      showToast("No pude reproducir la canción. Revisa el archivo musica/musica.mp3.");
     }
   } else {
     backgroundMusic.pause();
     musicToggle.setAttribute("aria-pressed", "false");
-    musicLabel.textContent = "Ligar música";
+    musicLabel.textContent = "Poner la música";
   }
 });
 
@@ -98,11 +98,11 @@ candles.forEach((candle) => {
     const remaining = candles.filter((item) => !item.classList.contains("blown")).length;
 
     if (remaining > 0) {
-      cakeInstruction.textContent = `Isso! Falta${remaining === 1 ? "" : "m"} ${remaining} velinha${remaining === 1 ? "" : "s"} ✨`;
+      cakeInstruction.textContent = `¡Eso es! Falta${remaining === 1 ? "" : "m"} ${remaining} velita${remaining === 1 ? "" : "s"} ✨`;
     } else {
-      cakeInstruction.textContent = "Pedido feito! Que todos os seus desejos floresçam. 💗";
+      cakeInstruction.textContent = "¡Ya lo pedí! Que todos tus deseos se hagan realidad. 💗";
       surpriseButton.disabled = false;
-      showToast("Todas as velinhas apagadas! Sua surpresa está pronta 💌");
+      showToast("¡Ya se apagaron todas las velitas! Tu sorpresa está lista 💌");
       createConfetti();
     }
   });
